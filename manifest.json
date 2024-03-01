@@ -4,7 +4,10 @@
     "description": "Replaces all images on all pages to Watermelon Cat.",
     "version": "1.0",
     "background": {
-      "service_worker": "nwatermeloncat.min.js"
+        "service_worker": "nwatermeloncat.min.js"
     },
-    "permissions": ["scripting", "activeTab"]
-  }
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ]
+}
