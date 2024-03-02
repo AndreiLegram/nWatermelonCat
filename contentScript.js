@@ -8,9 +8,10 @@
   })
 
   const changeAllImgs = async () => {
-    var imgs = document.getElementsByTagName("img");
+    const imgs = document.getElementsByTagName("img");
+    const src = chrome.runtime.getURL("assets/watermelon-cat.png");
     for (let img of imgs) {
-      img.src = chrome.runtime.getURL("assets/watermelon-cat.png");
+      img.src = src;
     }
   };
 

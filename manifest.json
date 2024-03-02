@@ -13,6 +13,12 @@
         "js": ["contentScript.js"]
       }
     ],
+    "web_accessible_resources": [
+      {
+        "resources": ["assets/watermelon-cat.png"],
+        "matches": ["https://*/*", "http://*/*"]
+      }
+    ],
     "action": {
       "default_icon": {
         "16": "assets/watermelon-cat.png",
