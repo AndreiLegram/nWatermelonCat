@@ -2,11 +2,17 @@
     "name": "Watermelon Cat",
     "version": "0.1.0",
     "description": "Replaces all images on all pages to Watermelon Cat",
-    "permissions": ["scripting", "activeTab"],
+    "permissions": ["tabs"],
     "host_permissions": ["https://*/*", "http://*/*"],
     "background": {
-      "service_worker": "nwatermeloncat.js"
+      "service_worker": "background.js"
     },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
     "action": {
       "default_icon": {
         "16": "assets/watermelon-cat.png",
