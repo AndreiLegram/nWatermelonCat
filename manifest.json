@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Watermelon Cat",
+  "name": "nWatermelonCat",
   "version": "1.0",
   "description": "Replaces all images on all pages to Watermelon Cat",
   "host_permissions": ["<all_urls>"],
