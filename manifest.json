@@ -1,31 +1,35 @@
 {
-    "name": "Watermelon Cat",
-    "version": "0.1.0",
-    "description": "Replaces all images on all pages to Watermelon Cat",
-    "permissions": ["tabs"],
-    "host_permissions": ["https://*/*", "http://*/*"],
-    "background": {
-      "service_worker": "background.js"
+  "manifest_version": 3,
+  "name": "Watermelon Cat",
+  "version": "1.0",
+  "description": "Replaces all images on all pages to Watermelon Cat",
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/watermelon-cat.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/watermelon-cat.png",
+      "24": "assets/watermelon-cat.png",
+      "32": "assets/watermelon-cat.png"
     },
-    "content_scripts": [
-      {
-        "matches": ["https://*/*", "http://*/*"],
-        "js": ["contentScript.js"]
-      }
-    ],
-    "web_accessible_resources": [
-      {
-        "resources": ["assets/watermelon-cat.png"],
-        "matches": ["https://*/*", "http://*/*"]
-      }
-    ],
-    "action": {
-      "default_icon": {
-        "16": "assets/watermelon-cat.png",
-        "24": "assets/watermelon-cat.png",
-        "32": "assets/watermelon-cat.png"
-      },
-      "default_title": "Watermelon Cat"
-    },
-    "manifest_version": 3
+    "default_title": "Watermelon Cat"
+  }
 }
