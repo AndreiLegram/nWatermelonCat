@@ -3,13 +3,7 @@
   "name": "Watermelon Cat",
   "version": "1.0",
   "description": "Replaces all images on all pages to Watermelon Cat",
-  "permissions": [
-    "tabs"
-  ],
   "host_permissions": ["<all_urls>"],
-  "background": {
-    "service_worker": "service-worker.js"
-  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -18,18 +12,12 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": [
-        "assets/watermelon-cat.png"
-      ],
+      "resources": ["watermelon-cat.png"],
       "matches": ["<all_urls>"]
     }
   ],
   "action": {
-    "default_icon": {
-      "16": "assets/watermelon-cat.png",
-      "24": "assets/watermelon-cat.png",
-      "32": "assets/watermelon-cat.png"
-    },
+    "default_icon": "watermelon-cat.png",
     "default_title": "Watermelon Cat"
   }
 }
