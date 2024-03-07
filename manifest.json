@@ -2,7 +2,8 @@
   "manifest_version": 3,
   "name": "nWatermelonCat",
   "version": "1.0",
-  "description": "Replaces all images on all pages to Watermelon Cat",
+  "description": "Replaces all images on all pages to Watermelon Cat.",
+  "host_permissions": ["<all_urls>"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
