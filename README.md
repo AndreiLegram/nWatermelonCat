@@ -5,7 +5,7 @@ A Chrome extension which replaces all images on all pages to Watermelon Cat.
 
 <hr>
 
-### Chrome Web Store: [*(under review)*]()
+### Chrome Web Store: [nWatermelonCat](https://chromewebstore.google.com/detail/nwatermeloncat/jicokdcgccfbedhhgplhgbmegnpbalhk)
 
 <hr>
 
